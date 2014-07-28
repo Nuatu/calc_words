@@ -17,4 +17,7 @@ describe('calc_words') do
   it("performs powers") do
     calc_words('What is 2 to the power of 3').should(eq("8.0"))
   end
+    it("takes multiple questions and returns multiple answers") do
+    calc_words('What is 2 to the power of 3? What is 3 plus 3? what is 2 minus 3').should(eq('8.0 6.0 -1.0'))
+  end
 end
